@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ComponenteFuncional from './components/ComponenteFuncional'
-import ClassComponent from './components/ClassComponent'
+import PropsExample from './components/PropsExample'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>Hello World</h1>
       <ComponenteFuncional />
-      <ClassComponent />
+      <PropsExample nome="Danilo" tempo={20} />
     </>
   )
 }
