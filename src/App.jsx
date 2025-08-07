@@ -1,13 +1,13 @@
-import React from 'react';
-import Hours from './components/CurrentHours';
+import './App.css'
+import Title from './components/Title'
 
 function App() {
 
   return (
     <>
-      
+      <Title />
     </>
   )
 }
 
-export default App;
+export default App
