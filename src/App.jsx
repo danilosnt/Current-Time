@@ -1,14 +1,13 @@
-import './App.css'
-import JsxExemplos from './components/JsxExemplos'
+import React from 'react';
+import Hours from './components/CurrentHours';
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
-      <JsxExemplos />
+      <Hours />
     </>
   )
 }
 
-export default App
+export default App;
