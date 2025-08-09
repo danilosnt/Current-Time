@@ -3,20 +3,16 @@ import Hour from "./Hour";
 
 function GMT() {
     const [gmtOffset, setGmtOffset] = useState(0);
-    const [time, setTime] = useState(new Date());
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setTime(new Date());
-        }, 1000);
+        const timer = setInterval(() => {}, 1000);
         return () => clearInterval(timer);
     }, []);
 
     return (
-        <div style={{ textAlign: "center" }}>
-            {/* Passa gmtOffset para Hour */}
+        <div className="container">
             <Hour gmtOffset={gmtOffset} />
-
+            
             <label>Selecione seu fuso horário:</label>
             <select
                 value={gmtOffset}
