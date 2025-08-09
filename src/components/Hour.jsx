@@ -1,23 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function Hour() {
-    const [time, setTime] = useState(new Date());
+function Hour({ gmtOffset }) {
+    const time = new Date();
+    const utcTime = time.getTime() + time.getTimezoneOffset() * 60000;
+    const newTime = new Date(utcTime + gmtOffset * 3600000);
 
-    useEffect(() => {
-        // Atualizar a hora por segundo
-        const timer = setInterval(() => {
-            setTime(new Date());
-        }, 1000);
-
-        // Limpa o intervalo quando o componente for desmontado
-        return () => clearInterval(timer);
-    }, []);
-
-    return (
-        <div class="Hour">
-            {time.toLocaleTimeString()} 
-        </div>
-    );
+    return <h2>{newTime.toLocaleTimeString()}</h2>;
 }
 
 export default Hour;

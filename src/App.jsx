@@ -1,13 +1,14 @@
-import Title from "./components/Title"
-import Hour from "./components/Hour"
+import React from "react";
+import Title from "./components/Title";
+import GMT from "./components/GMT";
 
 function App() {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', backgroundColor: '#dcdcdcff'}}>
-      <Title />
-      <Hour />
-    </div>
-  )
+    return (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Title />
+            <GMT />
+        </div>
+    );
 }
 
 export default App;
