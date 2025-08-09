@@ -10,3 +10,19 @@ body {
 .container {
     text-align: center;
 }
+
+.Hour {
+  font-size: 800%;
+}
+
+.GMT {
+  font-size: 200%;
+}
+
+.button_gmt {
+  font-size: 150%;
+  padding: 10px 20px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #636363 100%);
+  box-sizing: border-box;
+  border-radius: 40px;
+}

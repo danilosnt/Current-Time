@@ -12,12 +12,10 @@ function GMT() {
     return (
         <div className="container">
             <Hour gmtOffset={gmtOffset} />
-            
-            <label>Selecione seu fuso horário:</label>
-            <select
+            <label class="GMT">Select your time zone: </label>
+            <select class="button_gmt"
                 value={gmtOffset}
-                onChange={(e) => setGmtOffset(Number(e.target.value))}
-            >
+                onChange={(e) => setGmtOffset(Number(e.target.value))}>
                 {Array.from({ length: 25 }, (_, i) => i - 12).map((offset) => (
                     <option key={offset} value={offset}>
                         GMT{offset >= 0 ? `+${offset}` : offset}
