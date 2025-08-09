@@ -23,3 +23,7 @@
 - Contains a selector (select) that allows the user to choose the desired timezone (e.g., GMT-3, GMT+0, GMT+2, etc.).
 - When the selected value changes, it informs the App component to update the time shown in Hour.
 - Has predefined timezone options for easier selection.
+
+<h3>Style</h3>
+
+Obs: Every components have been edited in ```index.css```. Except for Title.jsx, which uses the ```styled-components``` library where the styling is done inside the same file.
