@@ -3,13 +3,15 @@ import styled from 'styled-components'
 
 const StyledTitle = styled.h1`
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    color: gray;
+    color: black;
     text-align: center;
-    background-color: orange;
+    font-size: 300%;
 `;
 
 function Title(){
-    return<StyledTitle>Byte Converter</StyledTitle>
+    return(
+        <StyledTitle>The Current Time is...</StyledTitle>
+    )
 }
 
 export default Title;
