@@ -1,6 +1,7 @@
 <h1>Current Time</h1>
 
 <h3>Component Structure</h3>
+
 1. App.jsx (Main Component)
 
 - Root component of the project.
