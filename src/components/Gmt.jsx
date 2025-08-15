@@ -10,7 +10,7 @@ function GMT() {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container" id="clock">
             <Hour gmtOffset={gmtOffset} />
             <label class="GMT">Select your time zone: </label>
             <select class="button_gmt"
