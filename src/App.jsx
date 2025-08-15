@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./components/Title";
-import GMT from "./components/GMT";
+import GMT from "./components/Gmt";
 
 function App() {
     return (
